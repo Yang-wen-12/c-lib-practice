@@ -1,0 +1,7 @@
+# 忽略C语言编译产物
+malloc_test_leak
+# 忽略临时文件
+*.o
+*.out
+# 忽略VS Code配置
+.vscode/
