@@ -1,6 +1,14 @@
+# 远端仓库原有忽略规则
 # 忽略编译生成的可执行程序
 sensor_demo
 # 忽略中间编译文件
 *.o
 # 临时日志文件
 *.log
+
+# 忽略C语言编译产物
+malloc_test_leak
+# 忽略临时文件
+*.out
+# 忽略VS Code配置
+.vscode/
