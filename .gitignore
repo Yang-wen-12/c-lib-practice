@@ -19,3 +19,11 @@ build/
 data.bin
 .vscode/
 log/*.log
+
+build/
+*.o
+*.bin
+*.txt
+logs/
+.vscode/
+

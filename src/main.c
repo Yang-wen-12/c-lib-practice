@@ -29,5 +29,55 @@ int main(void)
     p_data = NULL;
     p_read = NULL;
 
+
+#include "../include/sensor.h"
+
+// 菜单函数
+void menu() {
+    printf("\n===== 传感器管理系统 =====\n");
+    printf("1. 添加数据\n2. 查看所有\n3. 保存二进制\n4. 保存文本\n5. 读取文件\n0. 退出\n");
+    printf("==========================\n");
+    printf("请输入选项：");
+}
+
+int main() {
+    LinkList head = create_list();
+    int choice;
+
+    while (1) {
+        menu();
+        while(getchar() != '\n');
+        scanf("%d", &choice);
+
+        if (choice == 0) break;
+        SensorData tmp;
+
+        switch (choice) {
+            case 1:
+                printf("输入设备ID/名称/水位/水汽/温度：");
+                scanf("%d %s %f %f %f",
+                      &tmp.dev.dev_id, tmp.dev.dev_name,
+                      &tmp.water, &tmp.vapor, &tmp.temp);
+                add_data(head, tmp);
+                break;
+            case 2:
+                show_all(head);
+                break;
+            case 3:
+                save_bin(head, "data/sensor.bin");
+                printf("二进制保存成功！\n");
+                break;
+            case 4:
+                save_txt(head, "data/sensor.txt");
+                printf("文本保存成功！\n");
+                break;
+            case 5:
+                load_bin(head, "data/sensor.bin");
+                printf("读取成功！\n");
+                break;
+        }
+    }
+
+    free_list(head);  // 释放内存
     return 0;
 }
