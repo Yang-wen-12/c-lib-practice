@@ -1,0 +1,3 @@
+/home/yw/c_day4/CMakeFiles/app.dir
+/home/yw/c_day4/CMakeFiles/edit_cache.dir
+/home/yw/c_day4/CMakeFiles/rebuild_cache.dir

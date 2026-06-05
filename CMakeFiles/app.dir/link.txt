@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/app.dir/file.c.o CMakeFiles/app.dir/main.c.o CMakeFiles/app.dir/sensor.c.o CMakeFiles/app.dir/struct.c.o -o app 
