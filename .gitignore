@@ -12,3 +12,10 @@ malloc_test_leak
 *.out
 # 忽略VS Code配置
 .vscode/
+
+build/
+*.o
+*.tar.gz
+data.bin
+.vscode/
+log/*.log
