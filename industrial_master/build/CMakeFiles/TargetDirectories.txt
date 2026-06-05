@@ -1,0 +1,3 @@
+/home/yw/workpractice/industrial_master/build/CMakeFiles/sensor_master.dir
+/home/yw/workpractice/industrial_master/build/CMakeFiles/edit_cache.dir
+/home/yw/workpractice/industrial_master/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/sensor_master.dir/core/linklist.c.o CMakeFiles/sensor_master.dir/encrypt/crypto.c.o CMakeFiles/sensor_master.dir/io/fileio.c.o CMakeFiles/sensor_master.dir/log/logger.c.o CMakeFiles/sensor_master.dir/src/main.c.o -o sensor_master 
